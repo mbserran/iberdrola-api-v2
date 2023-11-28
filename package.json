@@ -1,25 +1,25 @@
 {
-  "name": "iberdrola-api",
-  "version": "0.0.1",
-  "description": "A NodeJS Wrapper for Iberdrola Consumptions API",
+  "name": "iberdrola-api-v2",
+  "version": "0.0.2",
+  "description": "A NodeJS Wrapper for Iberdrola Consumptions API v2",
   "main": "./lib/iberdrola",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alvaro-octal/node-iberdrola-api.git"
+    "url": "git+https://github.com/mbserran/iberdrola-api-v2.git"
   },
   "keywords": [
     "iberdrola",
     "node"
   ],
-  "author": "Alvaro Octal",
+  "author": "mbserran",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alvaro-octal/node-iberdrola-api/issues"
+    "url": "https://github.com/mbserran/iberdrola-api-v2/issues"
   },
-  "homepage": "https://github.com/alvaro-octal/node-iberdrola-api#readme",
+  "homepage": "https://github.com/mbserran/iberdrola-api-v2#readme",
   "dependencies": {
     "request": "^2.88.0",
     "request-json": "^0.6.5"
