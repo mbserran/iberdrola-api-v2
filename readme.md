@@ -2,7 +2,7 @@ An unofficial wrapper for Iberdrola API in NodeJS based on [zoilomora](https://g
 ## Installation
 
 ```
-npm install --save iberdrola-api
+npm install --save iberdrola-api-v2
 ```
 
 ## Usage
@@ -12,7 +12,8 @@ Iberdrola API is based on cookie sessions, so before making any request, you hav
 ```js
 var iberdrola = require('iberdrola-api').login({
     email: '',
-    password: ''
+    password: '',
+    token: ''
 });
 
 iberdrola.ready.then(() => {
@@ -28,6 +29,7 @@ Alternativelly you can skip the `Select Contract` method by simply adding it to 
 var iberdrola = require('iberdrola-api').login({
     email: '',
     password: '',
+    token: '',
     contract: ''
 });
 
@@ -162,7 +164,29 @@ iberdrola.getReadingsOfDay('2019-02-08').then((result) => {
 ]
 ```
 
+#### Get Exports of Day
 
+This method obtains the production (watts/hour) of every hour of a given day.
+
+```js
+
+iberdrola.getExportsOfDay('2019-02-08').then((result) => {
+    console.log({
+        readings: result
+    });
+}).catch(() => {
+    console.error('Unable to get readings of day');
+});
+
+// Output
+
+[
+     { hour: 0, generation: 0 },
+     { hour: 1, generation: 213 },
+     [...]
+     { hour: 23, generation: 253 }
+]
+```
 
 ## License
 
