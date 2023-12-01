@@ -1,4 +1,4 @@
-An unofficial wrapper for Iberdrola API in NodeJS based on [zoilomora](https://github.com/zoilomora/iberdrola) version.
+An unofficial wrapper for Iberdrola API in NodeJS based on [zoilomora](https://github.com/zoilomora/iberdrola) and [alvaro-octal](https://github.com/alvaro-octal/node-iberdrola-api) version.
 ## Installation
 
 ```
