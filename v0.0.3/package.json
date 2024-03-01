@@ -1,6 +1,6 @@
 {
   "name": "iberdrola-api-v2",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "description": "A NodeJS Wrapper for Iberdrola Consumptions API v2",
   "main": "./lib/iberdrola",
   "scripts": {

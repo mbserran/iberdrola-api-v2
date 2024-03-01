@@ -2,7 +2,7 @@
 * Create client as access point to BASE_URI of Iberdrola API
 **/
 var request = require('request-json');
-var client = request.createClient('https://www.i-de.es/consumidores/rest/', { jar: true });
+var client = request.createClient('https://www.iberdroladistribucionelectrica.com/consumidores/rest/', { jar: true });
 
 /**
 * Define iberdrola object where we will create the different methods - Constructor takes two parameters
@@ -20,7 +20,7 @@ var Iberdrola = function(credentials, callback) {
   };
 
   client.headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
     'Content-Type': 'application/json; charset=UTF-8',
     'dispositivo': 'desktop',
     'Sec-Ch-Ua-Platform': 'Windows',
@@ -59,7 +59,7 @@ Iberdrola.prototype.login = function() {
         null,
         'Windows 10',
         'PC',
-        'Chrome 122.0.0.0',
+        'Chrome 119.0.0.0',
         '0',
         '0',
         's',

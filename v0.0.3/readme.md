@@ -10,7 +10,7 @@ npm install --save iberdrola-api-v2
 Iberdrola API is based on cookie sessions, so before making any request, you have _wait_ until the request fisnishes.
 
 ```js
-var iberdrola = require('iberdrola-api-v2').login({
+var iberdrola = require('iberdrola-api').login({
     email: '',
     password: '',
     token: ''
@@ -26,7 +26,7 @@ iberdrola.ready.then(() => {
 Alternativelly you can skip the `Select Contract` method by simply adding it to the credentials
 
 ```js
-var iberdrola = require('iberdrola-api-v2').login({
+var iberdrola = require('iberdrola-api').login({
     email: '',
     password: '',
     token: '',
